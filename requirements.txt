@@ -1,0 +1,7 @@
+tensorflow
+keras
+tensorflow-hub
+matplotlib
+opencv-python
+Pillow
+IPython
