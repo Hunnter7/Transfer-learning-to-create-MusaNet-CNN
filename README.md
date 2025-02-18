@@ -40,6 +40,7 @@ model.compile(optimizer=SGD(learning_rate=0.01),
 ```
 
 **Training**
+
 * Trained for 10 epochs with SGD optimizer.
 * 80/20 train-test split; achieved 91.66% test accuracy.
 
@@ -66,13 +67,13 @@ model.compile(optimizer=SGD(learning_rate=0.01),
 
 **Installation**
 
-1. Clone the repository:
+1. **Clone the repository:**
 
 ```
 git clone https://github.com/Hunnter7/Transfer-learning-to-create-MusaNet-CNN.git
 ```
 
-2. Install dependencies
+2. **Install dependencies**
 
 ```
 pip install -r requirements.txt
@@ -82,7 +83,7 @@ pip install -r requirements.txt
 
 This section explains how to use the MusaNet model for banana leaf disease detection. The model is trained and saved in the SavedModel format, located in the MusaNet folder. You can either load the model for predictions or retrain it using the provided Google Colab notebook.
 
-1. Loading the Pre-Trained Model
+1. **Loading the Pre-Trained Model**
 
 The pre-trained model is saved in the MusaNet folder with the following structure:
 
@@ -121,13 +122,14 @@ def predict_leaf_disease(image_path):
 print(predict_leaf_disease('path_to_your_image.jpg'))
 ```
 
-2. Retraining the Model (Google Colab)
+2. **Retraining the Model (Google Colab)**
 
 If you want to retrain the model or explore the training process, use the provided Google Colab notebook <a href="https://github.com/Hunnter7/Transfer-learning-to-create-MusaNet-CNN/blob/main/Transfer_learning_to_create_MusaNet_CNN_model_.ipynb" title="MusaNet collab notebook">here</a>.</p>
 
 **Steps to Run the Notebook:**
 
 1. **Mount Google Drive:**
+   
 The notebook connects to Google Drive to access the dataset. Ensure your dataset is organized as follows:
 
 ```
@@ -143,12 +145,15 @@ The notebook connects to Google Drive to access the dataset. Ensure your dataset
 ```
 
 2. **Data Augmentation:**
+   
 The notebook uses ImageDataGenerator to augment the dataset with rotations, zooms, and shearing.
 
-3. **Model Training:**
+4. **Model Training:**
+   
 The model is trained using transfer learning with MobileNetV2 as the base model. Training logs and accuracy plots are displayed.
 
-4. **Save the Model:**
+6. **Save the Model:**
+   
 After training, the model is saved in SavedModel format and zipped for download.
 
 <h2>Notes</h2>
